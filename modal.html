@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Project</title>
+    <link rel="stylesheet" href="modal.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main_container container-fluid">
+        <!-- text -->
+        <div class="item">
+            <div>
+                <h1>Supply Managment Page</h1>
+            </div>
+            <div class="text">
+                <p>Managment Supply Statement Page</p>
+            </div>
+        </div>
+        <!-- box -->
+        <div class="row">
+            <div class="banner col-md-7">
+                <div class="main_box ">
+                    <div class="box1">
+                        <p>Supplier Name :<span> Md. aaaaaaa</span></p>
+                        <p>Supplier ID :<span> 68749663</span></p>
+                    </div>
+                    <div class="divided"></div>
+                    <div class="box2">
+                        <p>Supplier Ph No :<span> 01***********</span></p>
+                        <p style="text-align: end;">Supplier Adress :<span> Lorem ipsum dolor zih sit amet <br>
+                                consectetur
+                                adipisicing elit. Do</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="banner_part col-md-5">
+                <div class="banner-item">
+                    <div class="banner-control">
+                        <div>
+                            <label for="">Date</label>
+                            <input type="date">
+                        </div>
+                        <div><input type="date"></div>
+                    </div>
+                    <div class="submit"><button>Search</button></div>
+                </div>
+            </div>
+        </div>
+        <!-- button part -->
+        <div class="mid-button">
+            <div class="look "><button data-toggle="modal" data-target="#printModal">Print <i
+                        class='bx bx-printer'></i></button></div>
+            <div class="action "><button data-toggle="modal" data-target="#actionModal">Action</button></div>
+        </div>
+        <!-- table -->
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Date & Time</th>
+                        <th>Invoice <No>
+                                <br> Payment Description</th>
+                        <th>Product Value</th>
+                        <th>Payment <br> Received</th>
+                        <th>Advance Due / <br> Balance </th>
+                        <th>View</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>19-10-23 <br>
+                            04 : 09 : 45
+                        </td>
+                        <td>Bill Invoice No : 5987</td>
+                        <td>20,000</td>
+                        <td></td>
+                        <td>30,000</td>
+                        <td><i class='bx bxs-low-vision'></i></td>
+                    </tr>
+                    <tr>
+                        <td>10-10-23 <br>
+                            04 : 09 : 45
+                        </td>
+                        <td>Paymnet Invoice : 85269 <br>
+                            bank <br>
+                            Scb Moghbazar Branch
+                        </td>
+                        <td></td>
+                        <td>40,000</td>
+                        <td>10,000</td>
+                        <td><i class='bx bxs-low-vision' data-toggle="modal" data-target="#viewModal"></i></td>
+                    </tr>
+                    <tr class="border-botom">
+                        <td>08-10-23 <br>
+                            04 : 09 : 45
+                        </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>50,000</td>
+                        <td><i class='bx bxs-low-vision'></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- print modal -->
+
+    <div class="modal fade" id="printModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div style="padding: 0;" class="modal-body">
+                    <div style="padding: 30px">
+                        <div class="logo">
+                            <div class="print_header">
+                                <div></div>
+                                <h1>Statement</h1>
+                                <img src="./modal img]/logo.png" alt="">
+                            </div>
+                            <h3 class="text-right ">Resturant</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <table class="view_table">
+                                    <tr>
+                                        <td>Supplier Name </td>
+                                        <td><span>:</span></td>
+                                        <td>Md. aaaaaaaaaaa </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Supplier Name </td>
+                                        <td><span>:</span></td>
+                                        <td>Md. aaaaaaaaaaa </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Supplier Name </td>
+                                        <td><span>:</span></td>
+                                        <td>1-10-23 to 24-10-23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Supplier Name </td>
+                                        <td><span>:</span></td>
+                                        <td>zzzzzzzzzzzzzzzz</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="logo-item">
+                                    <address>25/1,c <br> Moghbazar, Dhaka</address>
+                                    <span>21-10-2023</span>
+                                    <div>
+                                        <img src="./modal img]/Group 9.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-responsive ">
+                        <table class="table-modal ">
+                            <thead>
+                                <tr>
+                                    <th>Date & Time</th>
+                                    <th>Invoice No/ <No>
+                                            <br> Payment Description</th>
+                                    <th>Product Value</th>
+                                    <th>Payment <br> Received</th>
+                                    <th>Advance <br> Due / Balance </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>19-10-23 <br>
+                                        04 : 09 : 45
+                                    </td>
+                                    <td>Bill Invoice No : 5987</td>
+                                    <td>20,000</td>
+                                    <td></td>
+                                    <td>30,000</td>
+
+                                </tr>
+                                <tr>
+                                    <td>10-10-23 <br>
+                                        04 : 09 : 45
+                                    </td>
+                                    <td>Paymnet Invoice : 85269 <br>
+                                        bank <br>
+                                        Scb Moghbazar Branch
+                                    </td>
+                                    <td></td>
+                                    <td>40,000</td>
+                                    <td>10,000</td>
+
+                                </tr>
+                                <tr>
+                                    <td>08-10-23 <br>
+                                        04 : 09 : 45
+                                    </td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>50,000</td>
+
+                                </tr>
+                                <tr class="footer">
+
+                                    <td colspan="2">Total</td>
+                                    <td>20,000</td>
+                                    <td>40,000</td>
+                                    <td></td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <!-- action modal -->
+
+    <div class="modal fade" id="actionModal" tabindex="-1" role="dialog" aria-labelledby="largeModal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body action_modal">
+                    <div class="logo-modal">
+                        <div class="actiont_header">
+                            <img src="./modal img]/logo.png" alt="">
+                            <h3 style="color:#000000">Resturant</h3>
+                        </div>
+                        <h1>Payment Invoice</h1>
+                        <div></div>
+                    </div>
+                    <div class="p-48">
+                        <div class="row view_table_wraper">
+                            <div class="col-md-9">
+                                <table class="view_table_action">
+                                    <tr>
+                                        <td>Supplier Name </td>
+                                        <td><span>:</span></td>
+                                        <td>Md. aaaaaaaaaaa </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Supplier Name </td>
+                                        <td><span>:</span></td>
+                                        <td>Md. aaaaaaaaaaa </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Supplier Name </td>
+                                        <td><span>:</span></td>
+                                        <td>Md. aaaaaaaaaaa </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Supplier Name </td>
+                                        <td><span>:</span></td>
+                                        <td>zzzzzzzzzzzzzzzz</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="logo-item-action">
+                                    <span>21-10-2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="from">
+                            <table class="view_table_action">
+                                <tr>
+                                    <td>Payment Amount </td>
+                                    <td><span>:</span></td>
+                                    <td><input class="action_input" type="text" value="2000"></td>
+                                </tr>
+                                <tr>
+                                    <td>Payment Amount
+                                        (In word) </td>
+                                    <td><span>:</span></td>
+                                    <td> <input class="action_input" value="Twenty Thousand Taka Only" /> </td>
+                                </tr>
+                                <tr>
+                                    <td>Payment Receiver Name </td>
+                                    <td><span>:</span></td>
+                                    <td> Md. aaaaaaaaaaa </td>
+                                </tr>
+                                <tr>
+                                    <td>Payment Description </td>
+                                    <td><span>:</span></td>
+                                    <td> <textarea class="action_input" name="" id="" cols="30" rows="4"></textarea>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
+                        <button class="action_submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+    <!-- view modal -->
+
+    <div class="modal fade" id="viewModal" tabindex="-1" role="dialog" aria-labelledby="largeModal" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div style="overflow: auto;" class="modal-body action_modal">
+                    <div style="min-width: 650px;padding: 30px">
+                        <div class="logo">
+                            <div class="print_header">
+                                <div></div>
+                                <h1>Payment Invoice</h1>
+                                <img src="./modal img]/logo.png" alt="">
+                            </div>
+                            <h3 class="text-right ">Resturant</h3>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <table class="view_table_icon">
+                                    <tr>
+                                        <td>Invoice No</td>
+                                        <td><span>:</span></td>
+                                        <td style="font-weight: bold;">9844585 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Supplier Name </td>
+                                        <td><span>:</span></td>
+                                        <td>Md. aaaaaaaaaaa </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Supplier Name </td>
+                                        <td><span>:</span></td>
+                                        <td>Md. aaaaaaaaaaa </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Supplier Name </td>
+                                        <td><span>:</span></td>
+                                        <td>1-10-23 to 24-10-23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Supplier Name </td>
+                                        <td><span>:</span></td>
+                                        <td>zzzzzzzzzzzzzzzz</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="logo-item-icon">
+                                    <address>25/1,c <br> <br> Moghbazar, Dhaka</address>
+                                    <span>21-10-2023</span>
+                                    <div>
+                                        <img src="./modal img]/Group 9.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="from">
+                            <table class="view_table_icon">
+                                <tr>
+                                    <td>Payment Amount </td>
+                                    <td><span>:</span></td>
+                                    <td>20000</td>
+                                </tr>
+                                <tr>
+                                    <td>Payment Amount <br>
+                                        (In word) </td>
+                                    <td><span>:</span></td>
+                                    <td>Twenty Thousand Taka Only</td>
+                                </tr>
+                                <tr>
+                                    <td>Payment Receiver Name </td>
+                                    <td><span>:</span></td>
+                                    <td> Md. aaaaaaaaaaa </td>
+                                </tr>
+                                <tr>
+                                    <td>Payment Description </td>
+                                    <td><span>:</span></td>
+                                    <td>Bank <br> Scb Moghbazar Branch</td>
+                                </tr>
+                            </table>
+                        </div>
+
+
+                        <!-- fotter -->
+
+                        <div class="signature">
+                            <div>
+                                <div class="bottom"></div>
+                                <p> Receiver Signature</p>
+                            </div>
+
+                            <div>
+                                <div class="bottom"></div>
+                                <p> Authorize Signature</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
